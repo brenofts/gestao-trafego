@@ -53,6 +53,11 @@ button:hover {
     margin: 5px 0;
 }
 
+#menu-escala {
+    align-self: flex-end;
+    position: absolute;
+}
+
 #ano {
     font-size: 14pt;
     color: rgb(164, 164, 164);
@@ -89,6 +94,7 @@ button:hover {
     height: 90%;
     display: flex;
     flex-direction: column;
+    justify-content: baseline;
     border-radius: 4px;
 }
 
@@ -202,3 +208,37 @@ button:hover {
 .outros {
 
 }
+
+span[class^="escala-"] {
+    padding: 1px 2px;
+    font-weight: bold;
+}
+
+.escala-a {
+    color: orange;
+}
+
+.escala-b {
+    color: green;
+}
+
+.escala-c {
+    color: blue
+}
+
+.escala-d {
+    color: purple;
+}
+
+.escala-e {
+    color: brown;
+}
+
+@media only screen and (max-width: 600px) {
+    .numero-dia {
+      font-size: 10pt;
+    }
+    label, #escala {
+        font-size: 7pt;
+    }
+  }

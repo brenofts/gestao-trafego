@@ -17,24 +17,35 @@
             <button><a href="treinamento.html">Treinamento</a></button>
         </div> -->
         <div id="div-calendario">
+            <div id="menu-escala">
+                <label for="escala">Escala</label>
+                <select name="escala" id="escala">
+                    <option value="todas">TODXS</option>
+                    <option value="a">A</option>
+                    <option value="b">B</option>
+                    <option value="c">C</option>
+                    <option value="d">D</option>
+                    <option value="e">E</option>
+                </select>
+            </div>
             <div id="menu-ano">
-                <button id="menos-ano"><</button>
+                <button id="menos-ano" onclick="menosAno()"><</button>
                 <div id="ano"></div>
-                <button id="mais-ano">></button>
+                <button id="mais-ano" onclick="maisAno()">></button>
             </div>
             <div id="menu-mes">
-                <button id="menos-mes"><</button>
+                <button id="menos-mes" onclick="menosMes()"><</button>
                 <div id="mes"></div>
-                <button id="mais-mes">></button>
+                <button id="mais-mes" onclick="maisMes()">></button>
             </div>
             <div id="semana">
-                <span>Domingo</span>
-                <span>Segunda</span>
-                <span>Terça</span>
-                <span>Quarta</span>
-                <span>Quinta</span>
-                <span>Sexta</span>
-                <span>Sábado</span>
+                <span id="dom">Domingo</span>
+                <span id="seg">Segunda</span>
+                <span id="ter">Terça</span>
+                <span id="qua">Quarta</span>
+                <span id="qui">Quinta</span>
+                <span id="sex">Sexta</span>
+                <span id="sab">Sábado</span>
             </div>
             <div id="calendario"></div>
         </div>
